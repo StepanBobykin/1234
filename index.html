@@ -1,0 +1,176 @@
+<html>
+<head>
+<title> My First Page</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+    .container {
+  display: flex;
+  width: 100%;
+  padding: 5% 20%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img { 
+  width: 100%;
+  height: 100%;
+}
+
+#hello_image1{
+position: absolute;
+top: 120%;
+left: 30%;
+-webkit-filter: drop-shadow(5px 5px 5px #4682B4);
+filter: drop-shadow(5px 5px 5px #4682B4);
+}
+#hello_image2{
+position: absolute;
+top: 130%;
+left: -5%;
+-webkit-filter: drop-shadow(5px 5px 5px #4682B4);
+filter: drop-shadow(5px 5px 5px #4682B4);
+}
+#hello_image3{
+position: absolute;
+top: 140%;
+left: 71%;
+-webkit-filter: drop-shadow(5px 5px 5px #4682B4);
+filter: drop-shadow(5px 5px 5px #4682B4);
+}
+#hello_image4{
+position: absolute;
+top: 220%;
+left: 6%;
+-webkit-filter: drop-shadow(5px 5px 5px #4682B4);
+filter: drop-shadow(5px 5px 5px #4682B4);
+}
+
+
+.container {
+text-align: center;
+color: rgb(12, 4, 12);
+text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+.centered {
+position: absolute;
+top: 500%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+#p01 {
+color: rgb(229, 255, 0);
+position: absolute;
+top: 191%;
+left: 0%;
+right: 70%;
+font-size: 120%;
+}
+#p02 {
+color: rgb(197, 252, 0);
+position: absolute;
+top: 191%;
+left: 70%;
+right: 0%;
+font-size: 120%;
+}
+#p03 {
+color: rgb(255, 238, 0);
+position: absolute;
+top: 280%;
+left: 30%;
+right: 30%;
+font-size: 150%;
+}
+#h01 {
+    color: rgb(12, 11, 11);
+    position: absolute;
+    top:1%;
+    left:35%;
+    font-size: 200%;
+}
+p {
+border: 1px solid rgba;
+padding: 30px;
+}
+
+</style>
+<h1 id="h01">ВОЛЕЙБОЛ В ЖИЗНИ КАЖДОГО!</h1>
+<script>
+var flag=false;
+
+</script>
+</head>
+<body>
+    <div class="container">
+  <div class="box">
+    <img src="images/D.jpg" width=55% height=auto>
+    <span>Женкский волейбол</span>
+  </div>
+  <div class="box">
+    <img src="images/N.jpg" width=150% height=auto>
+    <span>Мужской волейбол</span>
+  </div>
+  <div class="box">
+    <img src="images/N1.jpg" width=50% height=auto >
+    <span>Игровые моменты</span>
+  </div>
+</div>
+<body style="background-image:url('images/blok.jpg')">
+<div class="container">
+<div id="hello_image1">
+<img src="images/Osnova.jpg" width=100% height=auto >
+</div>
+<div id="hello_image2">
+<img src="images/Vilfredo.jpg" width=55% height=auto >
+</div>
+<div id="hello_image3">
+<img src="images/Maks.jpeg" width=150% height=auto >
+</div>
+<div id="hello_image4">
+<img src="images/Sergey.jpg" width=50% height=auto >
+</div>
+<p id="p01"></p>
+<script>
+document.getElementById("hello_image2").addEventListener("click", function() {
+document.getElementById("p01").innerHTML = "Вильфредо Леон Венеро (исп. Wilfredo León Venero,31 июля 1993 года, Сантьяго-де-Куба)— кубинский волейболист, доигровщик,игрок национальной сборной, дебютировавший в её составе в 14-летнем возрасте.";
+});
+</script>
+<p id="p02"></p>
+<script>
+document.getElementById("hello_image3").addEventListener("click", function() {
+document.getElementById("p02").innerHTML = "Максим Михайлов — один из самых титулованных действующих российских волейболистов, обладатель золотой и бронзовой медалей Олимпийских игр, двукратный чемпион Европы, победитель Кубка мира, Лиги наций и Мировой лиги.";
+});
+</script>
+<p id="p03"></p>
+<script>
+document.getElementById("hello_image4").addEventListener("click", function() {
+document.getElementById("p03").innerHTML = "Сергей Тетюхин – самый титулованный российский волейболист.Он олимпийский чемпион, многократный призер Олимпийских игр,чемпионатов мира и Европы, десятикратный чемпион России.";
+});
+</script>
+</body>
+</html>
